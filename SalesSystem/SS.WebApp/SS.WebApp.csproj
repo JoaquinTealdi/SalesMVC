@@ -1,0 +1,15 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>net6.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\SS.Core\SS.Core.csproj" />
+    <ProjectReference Include="..\SS.DAL\SS.DAL.csproj" />
+    <ProjectReference Include="..\SS.Model\SS.Model.csproj" />
+  </ItemGroup>
+
+</Project>
