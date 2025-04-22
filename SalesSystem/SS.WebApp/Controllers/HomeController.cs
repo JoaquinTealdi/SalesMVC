@@ -1,4 +1,6 @@
 ﻿using Microsoft.AspNetCore.Mvc;
+using SS.DAL;
+using SS.Model.Models;
 using SS.WebApp.Models;
 using System.Diagnostics;
 
@@ -7,11 +9,13 @@ namespace SS.WebApp.Controllers
     public class HomeController : Controller
     {
         private readonly ILogger<HomeController> _logger;
-
-        public HomeController(ILogger<HomeController> logger)
+        private readonly testt testt;
+        public HomeController(ILogger<HomeController> logger, testt testt)
         {
             _logger = logger;
+            this.testt = testt;
         }
+
 
         public IActionResult Index()
         {
@@ -20,6 +24,10 @@ namespace SS.WebApp.Controllers
 
         public IActionResult Privacy()
         {
+
+            testt.CreateCategory();
+
+
             return View();
         }
 
