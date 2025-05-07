@@ -25,8 +25,10 @@ namespace SS.WebApp.Controllers
         public IActionResult Privacy()
         {
 
-            testt.CreateCategory();
-
+            return View();
+        }
+        public IActionResult Profile()
+        {
 
             return View();
         }
