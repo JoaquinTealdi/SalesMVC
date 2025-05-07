@@ -12,3 +12,4 @@
 /SalesSystem/SS.WebApp/bin/Debug/net6.0
 /SalesSystem/SS.WebApp/obj
 /SalesSystem/.vs/ProjectEvaluation
+*.log
